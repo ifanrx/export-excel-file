@@ -1,0 +1,23 @@
+{
+  "name": "export-excel-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "mincloud deploy export-excel-file ../"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mincloud": "^1.0.4",
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "node-xlsx": "^0.14.1"
+  }
+}
